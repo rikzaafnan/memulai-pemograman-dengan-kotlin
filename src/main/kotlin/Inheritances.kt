@@ -1,5 +1,5 @@
 
-open class AnimalInheritances(val name:String, val weight:Double, val age:Int, val isCarnivora:Boolean) {
+abstract class AnimalInheritances(val name:String, val weight:Double, val age:Int, val isCarnivora:Boolean) {
     open fun eat() {
         println("$name sedang makan")
     }
@@ -85,5 +85,11 @@ fun main() {
 
     println("\n")
     dicodingSnake.bite(dicodingCat.name)
+    println("\n")
+
+
+//    val dicodingAnimal = AnimalInheritances("testing", 3.0, 1,true)
+//    dicodingAnimal.eat()
+//    dicodingAnimal.sleep()
 
 }
